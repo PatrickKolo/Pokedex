@@ -1,0 +1,396 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("img/3background.jpg");
+    background-position: center;
+    background-size: contain;
+}
+
+.bg {
+    background-color: rgb(83 83 205 / 30%);
+}
+
+.fullBgInSearch {
+    height: 100vh;
+}
+
+.d-none {
+    display: none;
+}
+
+.blur {
+    filter: blur(4px);
+}
+
+.searchBar {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    position: relative;
+    border-bottom: 0.2px solid lightgrey
+}
+
+.PokeLogo {
+    height: 100px;
+    opacity: 0.8;
+}
+
+.searchBar h1 {
+    left: 100px;
+    color: white;
+    font-size: xxx-large;
+    opacity: 0.8;
+}
+
+.searchBar button {
+    background-color: rgb(228, 31, 37);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+}
+
+.searchBar button:hover {
+    cursor: pointer;
+    background-color: lightcoral;
+}
+
+.searchBar input {
+    width: 210px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    opacity: 0.5;
+    font-weight: 900;
+    text-align: center;
+    font-size: inherit;
+    color: rgb(12, 12, 70);
+}
+
+.searchInputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.ClearSearchButton {
+    height: 30px;
+    opacity: 0.5;
+}
+
+.ClearSearchButton:hover {
+    height: 35px;
+    cursor: pointer;
+}
+
+.pokeArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 30px;
+}
+
+.PokeCard {
+    border-radius: 40px;
+    padding: 40px;
+    width: 350px;
+    height: 350px;
+    padding-bottom: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PokeCard h2 {
+    color: white;
+    margin-top: 0;
+}
+
+.PokeCard h3 {
+    color: white;
+    margin-bottom: 0;
+}
+
+.PokeCard img {
+    height: 250px;
+    box-shadow: 0px 0px 20px #ccc;
+    border-radius: 70px;
+    padding: 27px;
+}
+
+.PokeCard img:hover {
+    height: 300px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.singlePokemonContainer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(161, 161, 235, 0.2);
+    z-index: 1;
+}
+
+.PokemonDetailContainer {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 4px 11px #0e0e0e;
+}
+
+.headerDetailContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 68px;
+}
+
+
+.arrows {
+    height: 40px;
+    width: 40px;
+    padding-top: 25px;
+}
+
+.arrows:hover {
+    cursor: pointer;
+    height: 45px;
+}
+
+.topSection h2 {
+    text-align: center;
+    color: white;
+}
+
+.topSection img {
+    max-height: 300px;
+}
+
+.allTypesContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.bottomSection {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 50%;
+    border-radius: 40px;
+    margin-top: -20px;
+    background-color: white;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9e9e9e;
+    opacity: 0.8;
+}
+
+.weightAndHeight {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.BasestatsOfPokemon {
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+    height: 37px;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: 1px 1px 2px #0e0e0e;
+}
+
+.TypeChips {
+    background-color: lightgrey;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 2px #0e0e0e;
+}
+
+.PokemonStats {
+    width: 90%;
+}
+
+.StatDivs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.attackContainer {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+}
+
+.attackContainer p {
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #0e0e0e;
+}
+
+.progress-bar {
+    text-align: center;
+    max-width: 90%;
+}
+
+
+/* Define all the type-colors */
+.Grass {
+    background-color: rgba(144, 238, 144, 0.70)
+}
+
+.Fire {
+    background-color: rgb(240, 128, 128, 0.70);
+}
+
+.Water {
+    background-color: rgb(173, 216, 230, 0.70);
+}
+
+.Bug {
+    background-color: rgb(255, 255, 224, 0.70);
+}
+
+.Normal {
+    background-color: rgb(245, 222, 179, 0.70);
+}
+
+.Poison {
+    background-color: rgb(221, 160, 221, 0.70);
+}
+
+.Electric {
+    background-color: rgba(235, 235, 74, 0.7);
+}
+
+.Ground {
+    background-color: rgb(222, 184, 135, 0.67);
+}
+
+.Fairy {
+    background-color: rgba(116, 110, 103, 0.7);
+}
+
+.Fighting {
+    background-color: rgb(163, 97, 28, 0.7);
+}
+
+.Psychic {
+    background-color: rgb(238, 130, 238, 0.7);
+}
+
+.Rock {
+    background-color: rgb(128, 128, 128, 0.7)
+}
+
+.Ghost {
+    background-color: rgba(226, 216, 216, 0.7)
+}
+
+.Ice {
+    background-color: rgb(176, 196, 222, 0.7)
+}
+
+.Dragon {
+    background-color: rgb(218, 165, 32, 0.7)
+}
+
+@media (max-width: 920px) {
+
+    .PokemonDetailContainer {
+        width: 500px;
+    }
+}
+
+
+
+
+@media (max-width: 700px) {
+
+    .PokeLogo {
+        display: none;
+    }
+
+    .searchBar h1 {
+        display: none;
+    }
+
+    .PokeCard {
+        width: 220px;
+    }
+
+    .PokeCard img {
+        height: 180px;
+    }
+
+
+}
+
+@media (max-width: 630px) {
+    .PokemonDetailContainer {
+        width: 440px;
+    }
+}
+
+@media (max-width: 540px) {
+    .PokemonDetailContainer {
+        width: 250px
+    }
+
+    .weightAndHeight {
+        width: 160px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .attackContainer {
+        display: flex;
+        flex-direction: column;
+        width: 160px;
+        gap: 5px;
+    }
+
+    .attackContainer h4 {
+        margin: 0;
+    }
+
+    .attackContainer p {
+        margin: 0;
+    }
+
+    .topSection img {
+        max-height: 150px;
+    }
+}
