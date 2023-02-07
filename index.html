@@ -8,19 +8,21 @@
     <title>Pokedex</title>
 
     <link rel="icon" type="image/x-icon" href="img/Pokeball.png">
-
     <link rel="stylesheet" href="style.css">
 
     <script src="script.js"> </script>
+    <script src="template.js"> </script>
+
 
 
 </head>
 
 <body onload="loadPokemon()">
     <div id="bg" class="bg">
-
+<div class="overlay">
         <div onclick="closePokemonDetailContainer()" id="singlePokemonContainer" class="singlePokemonContainer d-none">
         </div>
+    </div>
 
         <div id="searchBar" class="searchBar">
             <h1>Pokedex</h1>
